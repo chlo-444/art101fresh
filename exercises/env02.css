@@ -1,0 +1,73 @@
+#hazard {
+    width: 200;
+    height: 175;
+    mix-blend-mode: multiply;
+    ;
+}
+
+p {
+    color: rgb(92, 87, 236);
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    height: 400px;
+    width: 1100px;
+}
+
+#fly {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fly {
+    mix-blend-mode: multiply;
+}
+
+p {
+    font-size: larger;
+}
+
+body {
+    background-color: rgb(108, 120, 87)
+}
+
+#flyguy {
+    height: 80;
+    width: 100;
+    mix-blend-mode: multiply;
+}
+
+#flyguy {
+    display: block;
+    position: relative;
+    margin-top: -360;
+    margin-left: 200px;
+}
+
+#flyguy2 {
+    height: 80;
+    width: 100;
+    mix-blend-mode: multiply;
+    position: absolute;
+    margin-top: -30;
+    margin-left: 650;
+}
+
+#flyguy3 {
+    height: 80;
+    width: 100;
+    mix-blend-mode: multiply;
+    position: absolute;
+    margin-top: -25;
+    margin-left: 1250
+}

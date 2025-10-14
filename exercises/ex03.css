@@ -1,0 +1,44 @@
+.test-div {
+    background: orange;
+    padding: 20px;
+    margin: 20px;
+}
+
+h1,
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.test-div h1,
+h2 {
+    color: chartreuse;
+}
+
+.test-div:hover {
+    background-color: crimson;
+}
+
+p {
+    font-family: fantasy;
+    color: darkviolet;
+    text-align: center;
+}
+
+.test-div {
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.special {
+    color: rgb(63, 108, 18);
+    background-color: black;
+}
+
+h3 {
+    text-align: center;
+}
+
+#house {
+    display: flex;
+}
