@@ -1,49 +1,27 @@
-#hazard {
-    width: 200px;
-    height: 175px;
+#hazard {width: 200px;height: 175px;
     mix-blend-mode: multiply;
     z-index: 10px;
-    margin-left: -28px;
-}
+    margin-left: -28px;}
+p {color: rgb(220, 140, 20); background-color: black;}
 
-p {
-    color: rgb(220, 140, 20);
-    background-color: black;
-}
+h1 {text-align: center;}
 
-h1 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
+p {text-align: center;}
 
 img {
     height: 400px;
     width: 1200px;
-    z-index: 10px;
-    padding: auto;
-    margin-left: 85px;
+    z-index: 10px;padding: auto;margin-left: 85px;}
 
-
-}
-
-
-#flyguy {
-    height: 80px;
-    width: 100px;
+#flyguy {    height: 80px;width: 100px;
     mix-blend-mode: multiply;
-    z-index: 10px;
-}
-
+    z-index: 10px;}
 #flyguy {
     display: block;
     position: static;
     margin-top: -360px;
     margin-left: 200px;
-    z-index: 10px;
-}
+    z-index: 10px;}
 
 #flyguy2 {
     height: 80px;
