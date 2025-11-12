@@ -18,15 +18,34 @@ megaSentence = "<h2> Venus Fly Traps love to eat: " + myBugs[0] + myBugs[1] + my
 megaSentence = megaSentence + "<h3>  They are " + myFavouriteBugs.type + ", " + myFavouriteBugs.how + ", and " + myFavouriteBugs.look + "</h3>";
 
 $("#output").html(megaSentence);
-
 //lets add a button to declare how many flies have been eaten
 
 
 let count = 0;
+const limit = 3;
 
 $("#declare").click(function () {
+    count++;
 
-    count = count + 1;
-    $("#declare").html("Dead Fly Count:0 " + count);
+    if (count <= limit) {
+        const flyId = `#flyguy${count === 1 ? "" : count}`;
+
+        // Replace image
+        $(flyId).attr("src", "skullpic.webp");
+
+        // Move the fly to a random position on screen
+        const newLeft = Math.random() * 500;
+        const newTop = Math.random() * 300;
+
+        $(flyId).animate({
+            left: newLeft + "px",
+            top: newTop + "px"
+        }, 800); // 800ms animation
+    } else {
+        $("#declare").html("RIP");
+        count = 0;
+    }
 });
+
+
 

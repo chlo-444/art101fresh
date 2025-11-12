@@ -1,0 +1,128 @@
+#hazard {
+    width: 200px;
+    height: 175px;
+    mix-blend-mode: multiply;
+    z-index: 10px;
+    margin-left: -28px;
+}
+
+p {
+    color: rgb(220, 140, 20);
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    height: 400px;
+    width: 1200px;
+    z-index: 10px;
+    padding: auto;
+    margin-left: 85px;
+}
+
+#flyguy {
+    height: 80px;
+    width: 100px;
+    mix-blend-mode: multiply;
+    z-index: 10px;
+}
+
+#flyguy {
+    display: block;
+    position: static;
+    margin-top: -360px;
+    margin-left: 200px;
+    z-index: 10px;
+}
+
+#flyguy2 {
+    height: 80px;
+    width: 100px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 650px;
+    z-index: 10px;
+}
+
+#flyguy3 {
+    height: 80px;
+    width: 100px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 1250px;
+    z-index: 10px;
+}
+
+#declare {
+    z-index: 1000px;
+}
+
+body {
+    background-color: rgb(113, 148, 78);
+}
+
+#fly {
+    mix-blend-mode: multiply;
+}
+
+#output {
+
+    margin-top: 300px;
+    text-align: center;
+}
+
+#declare {
+    color: rgb(0, 0, 0);
+    background-color: rgb(220, 140, 20);
+    border-color: #be5717;
+    position: absolute;
+    bottom: -10px;
+    left: 650px;
+    scale: 1.5;
+}
+
+h2 {
+    color: rgb(37, 57, 3);
+    text-align: center;
+    ;
+}
+
+h2:hover {
+    color: chocolate;
+}
+
+h3:hover {
+    color: chocolate;
+}
+
+h3 {
+    color: rgb(37, 57, 3);
+    text-align: center;
+}
+
+#skull {
+    position: absolute;
+    bottom: -240px;
+    scale: 0.12;
+    mix-blend-mode: multiply;
+    background-color: rgb(113, 148, 78);
+}
+
+p:hover {
+    color: red;
+    font-size: larger;
+}
+
+.flyguy {
+    position: absolute;
+    transition: transform 0.3s ease;
+}

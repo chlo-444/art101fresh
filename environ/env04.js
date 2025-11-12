@@ -34,9 +34,6 @@ $("#declare").click(function () {
         // stop increasing and show RIP when limit reached
         $("#declare").html("RIP");
         count = 0; // reset counter
-        // Optionally reset images back to original
-        $("#flyguy").attr("src", "fly1.webp");
-        $("#flyguy2").attr("src", "fly2.webp");
-        $("#flyguy3").attr("src", "fly3.webp");
+
     }
 });
