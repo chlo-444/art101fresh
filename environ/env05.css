@@ -121,8 +121,3 @@ p:hover {
     color: red;
     font-size: larger;
 }
-
-.flyguy {
-    position: absolute;
-    transition: transform 0.3s ease;
-}
