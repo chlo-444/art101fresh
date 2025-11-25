@@ -1,50 +1,69 @@
-#hazard {width: 200px;height: 175px;
+#hazard {
+    width: 200px;
+    height: 175px;
     mix-blend-mode: multiply;
-    z-index: 10px;
-    margin-left: -28px;}
-p {color: rgb(220, 140, 20); background-color: black;}
-
-h1 {text-align: center;}
-
-p {text-align: center;}
-
-img {
-    height: 400px;
-    width: 1200px;
-    z-index: 10px;padding: auto;margin-left: 85px;}
-
-#flyguy {    height: 80px;width: 100px;
-    mix-blend-mode: multiply;
-    z-index: 10px;}
-#flyguy {
-    display: block;
-    position: static;
-    margin-top: -360px;
-    margin-left: 200px;
-    z-index: 10px;}
-
-#flyguy2 {
-    height: 80px;
-    width: 100px;
-    mix-blend-mode: multiply;
-    position: absolute;
-    margin-top: -30px;
-    margin-left: 650px;
-    z-index: 10px;
+    z-index: 10;
+    margin-left: -28px;
+    position: relative;
 }
 
+p {
+    color: rgb(220, 140, 20);
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* main fly/trap image - put it behind the flyguy images by giving it a low z-index
+   and a positioning context so absolutely positioned flyguy elements are positioned
+   relative to the page (or change to a container if you prefer). */
+#fly {
+    height: 400px;
+    width: 1200px;
+    position: relative;
+    z-index: 1;
+    /* lower than the flyguy images */
+    margin-left: 85px;
+    mix-blend-mode: multiply;
+}
+
+#flyguy,
+#flyguy2,
 #flyguy3 {
     height: 80px;
     width: 100px;
     mix-blend-mode: multiply;
     position: absolute;
-    margin-top: -25px;
-    margin-left: 1250px;
-    z-index: 10px;
+    /* required for z-index to take effect and to place them where you want */
+    z-index: 20;
+    /* higher than #fly */
+}
+
+/* position each flyguy using top/left (clearer than margin-top/left when using absolute positioning)
+   you can tweak these values to place the images exactly where you want */
+#flyguy {
+    top: 40px;
+    left: 200px;
+}
+
+#flyguy2 {
+    top: 110px;
+    left: 650px;
+}
+
+#flyguy3 {
+    top: 115px;
+    left: 1250px;
 }
 
 #declare {
-    z-index: 1000px;
+    z-index: 1000;
 }
 
 body {
@@ -74,7 +93,7 @@ body {
 h2 {
     color: rgb(37, 57, 3);
     text-align: center;
-    ;
+
 }
 
 h2:hover {

@@ -27,6 +27,6 @@ let count = 0;
 $("#declare").click(function () {
 
     count = count + 1;
-    $("#declare").html("Dead Fly Count:0 " + count);
+    $("#declare").html("Dead Fly Count: " + count);
 });
 

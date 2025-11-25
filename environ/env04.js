@@ -33,7 +33,24 @@ $("#declare").click(function () {
     } else {
         // stop increasing and show RIP when limit reached
         $("#declare").html("RIP");
-        count = 0; // reset counter
+        // disable the button while we show RIP and reset images
+        $("#declare").prop("disabled", true);
+
+        // after a short delay, restore the button text, reset images, and re-enable
+        setTimeout(function () {
+            // restore the flyguy images back to the original
+            for (let i = 1; i <= limit; i++) {
+                const sel = `#flyguy${i === 1 ? "" : i}`;
+                $(sel).attr("src", "flyguy.jpeg");
+            }
+
+            // restore button label (match original HTML spacing)
+            $("#declare").html(" KILL THE FLIES");
+            $("#declare").prop("disabled", false);
+
+            // reset counter so user can start again
+            count = 0;
+        }, 1500); // 1.5s delay
 
     }
 });
